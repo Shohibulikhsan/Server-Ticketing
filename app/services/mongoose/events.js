@@ -58,7 +58,6 @@ const createEvents = async (req) => {
     image,
     category,
     talent,
-    
   } = req.body;
 
   // cari image, category dan talent dengan field id
