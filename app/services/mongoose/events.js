@@ -200,7 +200,7 @@ const changeStatusEvents = async (req) => {
   // cari event berdasarkan field id
   const checkEvent = await Events.findOne({
     _id: id,
-    
+    organizer: req.user.organizer
   });
 
   // jika id result false / null maka akan menampilkan error `Tidak ada acara dengan id` yang dikirim client
